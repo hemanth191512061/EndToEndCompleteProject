@@ -93,7 +93,7 @@ public class BaseClass {
 	public static void setProperty() throws FileNotFoundException {
 
 		OutputStream out = new FileOutputStream(
-				System.getProperty("user.dir")+"\\EndToEndTesting\\Configuration\\Config.properties");
+				System.getProperty("user.dir")+"\\Configuration\\Config.properties");
 
 		prop.setProperty("Driver", "firefox");
 
