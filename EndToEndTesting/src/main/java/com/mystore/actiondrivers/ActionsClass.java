@@ -137,7 +137,7 @@ public class ActionsClass extends BaseClass {
 
 				new File(System.getProperty("user.dir") + "\\Screenshot\\" + Filename + dateName + ".png"));
 		
-		FilePath="C:\\Users\\welcome\\eclipse-workspace\\EndToEndTesting\\Screenshot\\" + Filename + dateName + ".png";
+		FilePath=System.getProperty("user.dir")+"\\EndToEndTesting\\Screenshot\\" + Filename + dateName + ".png";
 		
 		return FilePath;
 
