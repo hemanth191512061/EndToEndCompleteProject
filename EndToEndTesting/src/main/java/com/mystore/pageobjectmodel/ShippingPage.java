@@ -19,18 +19,18 @@ public class ShippingPage extends BaseClass {
 	
 	public ShippingPage() {
 		// TODO Auto-generated constructor stub
-		PageFactory.initElements(Driver, this);
+		PageFactory.initElements(getDriver(), this);
 		
 	}
 	
 	public void checkBox() throws InterruptedException {
 		
-		action.Click(Driver, check);
+		action.Click(getDriver(), check);
 	}
 	
 	public PaymentsPage clickOnProceed() throws InterruptedException {
 		
-		action.Click(Driver, checkOutPage);
+		action.Click(getDriver(), checkOutPage);
 		
 		return new PaymentsPage();
 	}

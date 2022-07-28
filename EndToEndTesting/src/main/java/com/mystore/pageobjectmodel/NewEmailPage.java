@@ -5,8 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.mystore.actiondrivers.ActionsClass;
+import com.mystore.baseclass.BaseClass;
 
-public class NewEmailPage extends ActionsClass {
+public class NewEmailPage extends BaseClass {
 
 	ActionsClass action = new ActionsClass();
 	
@@ -16,7 +17,7 @@ public class NewEmailPage extends ActionsClass {
 	public NewEmailPage() {
 		// TODO Auto-generated constructor stub
 		
-		PageFactory.initElements(Driver, this);
+		PageFactory.initElements(getDriver(), this);
 		
 	}
 	

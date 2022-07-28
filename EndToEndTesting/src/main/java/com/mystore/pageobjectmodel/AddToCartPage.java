@@ -13,7 +13,6 @@ import com.mystore.baseclass.BaseClass;
 
 public class AddToCartPage extends BaseClass {
 
-	
 	ActionsClass action = new ActionsClass();
 	@FindBy(id = "quantity_wanted")
 	WebElement Quantity;
@@ -34,7 +33,7 @@ public class AddToCartPage extends BaseClass {
 
 	public AddToCartPage() {
 		// TODO Auto-generated constructor stub
-		PageFactory.initElements(Driver, this);
+		PageFactory.initElements(getDriver(), this);
 
 	}
 
@@ -52,13 +51,13 @@ public class AddToCartPage extends BaseClass {
 
 	public void addToCartSelect() throws InterruptedException {
 
-		action.Click(Driver, addToCart);
+		action.Click(getDriver(), addToCart);
 
 	}
 
 	public Boolean checkProductAddedToCart() throws InterruptedException {
 
-		action.fluentWait(Driver, checkProductAdded);
+		action.fluentWait(getDriver(), checkProductAdded);
 
 		return action.isDisplayed(checkProductAdded);
 
@@ -66,9 +65,9 @@ public class AddToCartPage extends BaseClass {
 
 	public OrderPage proceedToOrderPage() {
 
-		action.fluentWait(Driver,proceedToNextPage);
-		
-		action.JSClick(Driver, proceedToNextPage);
+		action.fluentWait(getDriver(), proceedToNextPage);
+
+		action.JSClick(getDriver(), proceedToNextPage);
 
 		return new OrderPage();
 

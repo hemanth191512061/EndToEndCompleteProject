@@ -19,19 +19,19 @@ public class PaymentsPage extends BaseClass {
 	public PaymentsPage() {
 		// TODO Auto-generated constructor stub
 
-		PageFactory.initElements(Driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public OrderSummaryPage clickPayByBankWire() throws InterruptedException {
 
-		action.Click(Driver, payByBankWire);
+		action.Click(getDriver(), payByBankWire);
 
 		return new OrderSummaryPage();
 	}
 
 	public OrderSummaryPage clickPayByCheck() throws InterruptedException {
 
-		action.Click(Driver, payByCheck);
+		action.Click(getDriver(), payByCheck);
 
 		return new OrderSummaryPage();
 	}

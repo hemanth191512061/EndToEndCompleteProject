@@ -15,7 +15,7 @@ public class SearchPage extends BaseClass {
 	
 	public SearchPage() {
 		// TODO Auto-generated constructor stub
-		PageFactory.initElements(Driver, this);
+		PageFactory.initElements(getDriver(), this);
 		
 	}
 	
@@ -26,7 +26,7 @@ public class SearchPage extends BaseClass {
 	
 	public AddToCartPage productClick() throws InterruptedException {
 		
-		action.Click(Driver, Product);
+		action.Click(getDriver(), Product);
 		
 		return new AddToCartPage();
 	}

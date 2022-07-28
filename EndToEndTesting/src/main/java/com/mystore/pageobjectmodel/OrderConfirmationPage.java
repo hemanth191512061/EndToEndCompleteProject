@@ -16,12 +16,12 @@ public class OrderConfirmationPage extends BaseClass {
 
 	public OrderConfirmationPage() {
 		// TODO Auto-generated constructor stub
-		PageFactory.initElements(Driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public boolean checkOrderisConfirmed() {
 
-		action.fluentWait(Driver, orderConfirm);
+		action.fluentWait(getDriver(), orderConfirm);
 
 		return action.isDisplayed(orderConfirm);
 	}

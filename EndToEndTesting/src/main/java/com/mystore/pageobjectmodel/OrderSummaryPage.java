@@ -16,13 +16,13 @@ public class OrderSummaryPage extends BaseClass {
 	public OrderSummaryPage() {
 		// TODO Auto-generated constructor stub
 		
-		PageFactory.initElements(Driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	
 	public OrderConfirmationPage clickOnConfirmOrder() throws InterruptedException {
 		
-		action.Click(Driver, confirmOrder);
+		action.Click(getDriver(), confirmOrder);
 		
 		return new OrderConfirmationPage(); 
 		

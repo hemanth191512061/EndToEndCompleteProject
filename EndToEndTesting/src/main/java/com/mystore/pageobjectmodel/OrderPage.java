@@ -22,7 +22,7 @@ public class OrderPage extends BaseClass {
 
 	public OrderPage() {
 		// TODO Auto-generated constructor stub
-		PageFactory.initElements(Driver, this);
+		PageFactory.initElements(getDriver(), this);
 
 	}
 
@@ -52,7 +52,7 @@ public class OrderPage extends BaseClass {
 
 	public SignPage checkToProceed() throws InterruptedException {
 
-		action.Click(Driver, proceedToCheckOut);
+		action.Click(getDriver(), proceedToCheckOut);
 
 		return new SignPage();
 	}
