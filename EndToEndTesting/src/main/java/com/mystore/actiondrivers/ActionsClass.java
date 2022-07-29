@@ -135,7 +135,7 @@ public class ActionsClass extends BaseClass {
 
 		FileUtils.copyFile(file,
 
-				new File(System.getProperty("user.dir") + "\\ScreenShot\\" + Filename  + dateName + ".png"));
+				new File("C:\\Users\\welcome\\.jenkins\\workspace\\MyStore\\EndToEndTesting\\ScreenShot\\" + Filename  + dateName + ".png"));
 		
 		FilePath="http://localhost:8080/job/MyStore/ws/EndToEndTesting/Screenshot/" + Filename + dateName + ".png";
 		
