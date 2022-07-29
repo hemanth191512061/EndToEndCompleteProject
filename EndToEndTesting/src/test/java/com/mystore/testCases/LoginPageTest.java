@@ -79,7 +79,7 @@ public class LoginPageTest extends BaseClass {
 		String actualText = homePage.homePageCheck();
 
 		Assert.assertEquals(actualText,
-				"Welcome to your account. Here you can manage all of your personal information");
+				"Welcome to your account. Here you can manage all of your personal information and orders.");
 
 		Loggers.info("Entered in the home page");
 

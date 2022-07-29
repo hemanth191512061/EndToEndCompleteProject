@@ -11,7 +11,7 @@
 		</classes>
 	</test> <!-- Test -->
 	<test name="IETest">
-		<parameter name="browser" value="FireFox"></parameter>
+		<parameter name="browser" value="Firefox"></parameter>
 		<classes>
 			<class name="com.mystore.testCases.LoginPageTest" />
 		</classes>
