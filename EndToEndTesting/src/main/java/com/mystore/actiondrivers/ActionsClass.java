@@ -135,9 +135,9 @@ public class ActionsClass extends BaseClass {
 
 		FileUtils.copyFile(file,
 
-				new File(System.getProperty("user.dir") + "\\Screenshot\\" + Filename + dateName + ".png"));
+				new File(System.getProperty("user.dir") + "/Screenshot/" + Filename + dateName + ".png"));
 		
-		FilePath=System.getProperty("user.dir")+"\\EndToEndTesting\\Screenshot\\" + Filename + dateName + ".png";
+		FilePath="http://localhost:8080/job/MyStore/ws/EndToEndTesting/Screenshot/" + Filename + dateName + ".png";
 		
 		return FilePath;
 
