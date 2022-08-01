@@ -129,13 +129,15 @@ public class ActionsClass extends BaseClass {
 
 		String dateName = new SimpleDateFormat("yyyyMMdhhmmss").format(new Date());
 		
+		String user=System.getProperty("user.dir");
+		
 		String FilePath;
 
 		File file = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 
 		FileUtils.copyFile(file,
 
-				new File("C:\\Users\\welcome\\.jenkins\\workspace\\MyStore\\EndToEndTesting\\ScreenShot\\" + Filename  + dateName + ".png"));
+				new File(user + "\\Screenshot\\" + Filename  + dateName + ".png"));
 		
 		FilePath="http://localhost:8080/job/MyStore/ws/EndToEndTesting/Screenshot/" + Filename + dateName + ".png";
 		

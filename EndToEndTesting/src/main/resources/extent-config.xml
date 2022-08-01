@@ -19,7 +19,7 @@
         <!-- report name - displayed at top-nav -->
         <reportName>Automation Report
        <![CDATA[
-                <img src='C:\Users\welcome\.jenkins\workspace\MyStore\EndToEndTesting\Logo\logo.png'/>
+                <img src='http://localhost:8080/job/MyStore/ws/EndToEndTesting/Logo/logo.png'/>
             ]]>
         </reportName>
         

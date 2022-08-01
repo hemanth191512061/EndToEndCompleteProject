@@ -19,7 +19,7 @@ public class ExtendManager {
 	public static void extendReport() throws IOException {
 		// TODO Auto-generated method stub
 
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "\\ExtentReports\\reports.html");
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "\\test-output\\Extent_Reports\\reports.html");
 
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir") + "\\src\\main\\resources\\extent-config.xml");
 
