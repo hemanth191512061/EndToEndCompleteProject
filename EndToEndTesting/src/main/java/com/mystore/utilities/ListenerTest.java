@@ -45,12 +45,11 @@ public class ListenerTest extends ExtendManager implements ITestListener {
 
 			System.out.println("The name of the testcase failed is :" + Result.getName());
 			try {
-			test.log(Status.FAIL, MarkupHelper.createLabel(Result.getName() + "TestCase is failed", ExtentColor.RED));
+				test.log(Status.FAIL,
+						MarkupHelper.createLabel(Result.getName() + "TestCase is failed", ExtentColor.RED));
 
-			test.log(Status.FAIL,
-					MarkupHelper.createLabel(Result.getThrowable() + "TestCase is failed", ExtentColor.RED));
-
-			
+				test.log(Status.FAIL,
+						MarkupHelper.createLabel(Result.getThrowable() + "TestCase is failed", ExtentColor.RED));
 
 				FilePath = action.screenshot(Result.getName());
 
